@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 22px 0;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#top{
+    font-weight: 200;
+    margin-top: 68px;
+    color: hsl(229, 6%, 66%);
+}
+
+#bottom{
+    color: hsl(234, 12%, 34%);
+}
+
+#intro{
+    margin: 20px 10px 68px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+
+.card{
+    height: 180px;
+    border-radius: 2%;
+    box-shadow: 2px 10px 20px hsla(210, 39%, 80%, 0.5);
+    padding: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 15px bottom 15px;
+    margin: 20px 10px 0;
+}
+
+.card h2{
+    color:hsl(234, 12%, 34%);
+    font-size: 1.3em;
+}
+
+.card p{
+    color:hsl(229, 6%, 66%);
+    font-size: .9em;
+}
+
+.sup{
+    border-top: 5px solid hsl(180, 62%, 55%);
+    background-image: url(images/icon-supervisor.svg);
+}
+
+.tea{
+    border-top: 5px solid hsl(0, 78%, 62%);
+    background-image: url(images/icon-team-builder.svg);
+}
+
+.kar{
+    border-top: 5px solid hsl(34, 97%, 64%);
+    background-image: url(images/icon-karma.svg);
+}
+
+.cal{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    background-image: url(images/icon-calculator.svg);
+}
+
+/*Responsive*/
+@media only screen and (min-width: 720px) {
+    .card{
+        width: 25vw;
+        min-width: 200px;
+        max-width: 350px;
+        height: 210px;
+        margin: 0;
+    }
+
+    #intro{
+        margin-bottom: 45px;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    .card h2{
+        font-size: 1.5em;
+    }
+
+    .card p{
+        font-size: 1em;
+    }
+    
+    .kar, .tea{
+        margin-bottom: 20px;
+
+    }
+
+    #mid{
+        padding: 0;
+        height: 460px;
+        width: 25vw;
+        min-width: 200px;
+        max-width: 350px;
+        float:left;
+        margin: 0 10px;
+    }
+
+    .sup{
+        margin: 20px 10px 0 0;
+        float: left;
+    }
+
+    .cal{
+        margin: 20px 0 0 10px;
+        float: left;
+    }
+
+    #container{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
